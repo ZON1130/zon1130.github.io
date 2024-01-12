@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="./js/jquery.js"></script>
+    <title>photo</title>
+  </head>
+  <body>
+    <header id="head">
+      <img src="./images/logo.png" alt="" />
+      <p>ABOUT ME <span>PHOTOGRAPHIC</span></p>
+    </header>
+    <div class="header2"><span>///</span>PHOTOGRAPHIC<span>///</span></div>
+    <div class="slider slider-for">
+      <div>
+        <h3><img src="./images/banner1.png" alt="" /></h3>
+      </div>
+      <div>
+        <h3><img src="./images/main8.jpg" alt="" /></h3>
+      </div>
+      <div>
+        <h3><img src="./images/main7.jpg" alt="" /></h3>
+      </div>
+      <div>
+        <h3><img src="./images/main10.jpg" alt="" /></h3>
+      </div>
+      <div>
+        <h3><img src="./images/main11.jpg" alt="" /></h3>
+      </div>
+      <div>
+        <h3><img src="./images/main12.jpg" alt="" /></h3>
+      </div>
+      <div>
+        <h3><img src="./images/main13.jpg" alt="" /></h3>
+      </div>
+      <div>
+        <h3><img src="./images/main9.jpg" alt="" /></h3>
+      </div>
+    </div>
+    <div class="slider slider-nav">
+      <div>
+        <h3><img src="./images/banner1.png" alt="" /></h3>
+      </div>
+      <div>
+        <h3><img src="./images/top1.png" alt="" /></h3>
+      </div>
+      <div>
+        <h3><img src="./images/top2.png" alt="" /></h3>
+      </div>
+      <div>
+        <h3><img src="./images/top3.png" alt="" /></h3>
+      </div>
+      <div>
+        <h3><img src="./images/top4.png" alt="" /></h3>
+      </div>
+      <div>
+        <h3><img src="./images/top5.png" alt="" /></h3>
+      </div>
+      <div>
+        <h3><img src="./images/top6.png" alt="" /></h3>
+      </div>
+      <div>
+        <h3><img src="./images/top7.png" alt="" /></h3>
+      </div>
+    </div>
+    <div class="main">
+      <div class="title"><span>///</span>ZON<span>///</span></div>
+      <div class="container">
+        <div class="l b-l"></div>
+        <div class="r b-r"></div>
+        <div class="box2">
+          <img src="./images/main5.jpg" alt="" />
+          <img src="./images/main2.png" alt="" />
+          <img src="./images/main6.jpg" alt="" />
+          <img src="./images/main5.jpg" alt="" />
+          <img src="./images/main2.png" alt="" />
+          <img src="./images/main6.jpg" alt="" />
+          <img src="./images/main5.jpg" alt="" />
+          <img src="./images/main2.png" alt="" />
+          <img src="./images/main6.jpg" alt="" />
+          <img src="./images/main5.jpg" alt="" />
+          <img src="./images/main2.png" alt="" />
+          <img src="./images/main6.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="footer"><a href="#head">↑&nbsp;Back to Top</a></div>
+    <script src="./js/slick.js"></script>
+    <script src="./js/slide.js"></script>
+    <script>
+      $(".slider-for").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: ".slider-nav",
+      });
+      $(".slider-nav").slick({
+        slidesToShow: 7,
+        slidesToScroll: 1,
+        asNavFor: ".slider-for",
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: false,
+      });
+      document.querySelector(".slick-prev").innerHTML = "";
+      document.querySelector(".slick-next").innerHTML = "";
+    </script>
+  </body>
+</html>
