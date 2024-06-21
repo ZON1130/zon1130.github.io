@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate On Scroll</title>
+    <!-- 載入 AOS 專用 CSS  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1><img src="images/logo.png"/></h1>
+        <div><img src="images/menu.png" alt="" ></div>
+    </header>
+    <section class="section1">
+        <div class="txt" data-aos="slide-right" data-aos-delay="50">
+            <picture>
+                <source media="(max-width: 768px)" srcset="images/section1-txt-m.png">
+                <source srcset="images/section1-txt.png">
+                <img src="images/section1-txt.png" >
+            </picture>
+        </div>
+        <div class="pic" data-aos="slide-left" data-aos-delay="50">
+            <picture>
+                <source media="(max-width: 768px)" srcset="images/section1-pic-m.png">
+                <source srcset="images/section1-pic.png">
+                <img src="images/section1-pic.png" alt="" >
+            </picture>
+        </div>
+    </section>
+    <section class="section2">
+        <div class="audio-wapper">
+            <audio id="the-music" src="audio/3 Strikes (720p)拷貝.mp4" controls preload></audio>
+            <div class="audio-player">
+                <button class="button-play" onclick="playAudio()">PLAY</button>
+                <button class="button-pause" onclick="pauseAudio()">PAUSE</button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="pic">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="images/section2-pic-m.png">
+                    <source srcset="images/section2-pic.png">
+                    <img src="images/section2-pic.png" alt="" >
+                </picture>
+            </div>
+            <div class="txt">
+                <div class="txt1" data-aos="slide-right">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="images/section2-txt1-m.png">
+                        <source srcset="images/section2-txt1.png">
+                        <img src="images/section2-txt1.png" alt="" >
+                    </picture>
+                </div>
+                <div class="txt2" data-aos="slide-right">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="images/section2-txt2-m.png">
+                        <source srcset="images/section2-txt2.png">
+                        <img src="images/section2-txt2.png" alt="" >
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section3">
+        <div class="txt" data-aos="slide-right" data-aos-delay="50">
+            <picture>
+                <source media="(max-width: 768px)" srcset="images/section3-txt-m.png">
+                <source srcset="images/section3-txt.png">
+                <img src="images/section3-txt.png" alt="" >
+            </picture>
+        </div>
+        <div class="pic" data-aos="slide-left" data-aos-delay="50">
+            <picture>
+                <source media="(max-width: 768px)" srcset="images/section3-pic-m.png">
+                <source srcset="images/section3-pic.png">
+                <img src="images/section1-pic.png" alt="" >
+            </picture>
+        </div>
+    </section>
+    <!-- *載入AOS專用 JS* -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- *啟動AOS JS* -->
+    <script>
+        AOS.init();
+        let myMusic = document.getElementById("the-music");//告訴javaScript要設定的音樂檔
+        function playAudio() {myMusic.play();}//播放音樂
+        function pauseAudio() {myMusic.pause();}//暫停音樂
+    </script>
+</body>
+</html>

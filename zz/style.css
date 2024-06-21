@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+body {
+    color: #ffffff;
+}
+section {
+    width: 100%;
+    padding: 0 5%;
+    height: 80vh;
+    overflow: hidden;
+}
+header{
+    width: 100%;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 img{
+    width: 204px;
+    height: 65px;
+}
+header div img{
+    width: 74px;
+    height: 65px;
+}
+.section1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #95961A;
+}
+.section1 .txt{
+    width: 30%;
+}
+.section1 .pic{
+    width: 70%;
+}
+.section1 img{
+    width: 100%;
+}
+.section2{
+    background: #ffffff;
+}
+.section2 .main{
+    width: 100%;
+    margin: 5vh auto 10vh auto;
+    background: #EDB927;
+    border-radius: 23px;
+    position: relative;
+}
+.section2 .pic{
+    width: 50%;
+    margin: 0 auto;
+}
+.section2 .pic img{
+    width: 100%;
+}
+.section2 .txt{
+    position: absolute;
+    left: 5%;
+    top: 65px;
+    z-index: 10;
+    width: 80%;
+}
+.section2 .txt1{
+    width: 60%;
+    margin-bottom: 20px;
+}
+.section2 .txt2{
+    width: 80%;
+}
+.section2 .txt img{
+    width: 100%;
+}
+.audio-wapper{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+.audio-player {
+    width: 240px;
+    height: 50px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #95961A;
+}
+button {
+    cursor: pointer;
+    color: white;
+    width: 100px;
+    line-height: 30px;
+    border: 2px solid white;
+    border-radius: 30px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+.button-play {
+    padding-left: 30px;
+    background-position: 6px center;
+    background-image: url(images/play_circle_24dp_FILL0_wght400_GRAD0_opsz24.svg);
+}
+.button-pause {
+    padding-left: 30px;
+    background-position: 6px center;
+    background-image: url(images/pause_circle_24dp_FILL0_wght400_GRAD0_opsz24.svg);
+}
+.section3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #BFC132;
+}
+.section3 .txt{
+    width: 30%;
+}
+.section3 .pic{
+    width: 70%;
+}
+.section3 img{
+    width: 100%;
+}
+@media screen and (max-width: 940px) {
+    section {
+        height: 50vh;
+    }
+    .section2{
+        height: auto;
+    }
+    .section2 .main{
+        margin: 5vh auto;
+        padding-bottom: 30px;
+    }
+    .audio-wapper{
+        display: block;
+    }
+    #the-music{
+        display: block;
+        margin: 0 auto;
+    }
+    .audio-player{
+        margin: 10px auto;
+    }
+    .section2 .txt{
+        position: relative;
+        top: 0;
+        width: 100%;
+    }
+}
